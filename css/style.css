@@ -1,8 +1,16 @@
-
-  
 @font-face {
     font-family: "AtkinsonHyperlegible-Regular";
     src: url("/font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AtkinsonHyperlegible-Italic";
+    src: url("/font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf");
+}
+
+@font-face {
+    font-family: "AtkinsonHyperlegible-Bold";
+    src: url("/font/Atkinson_Hyperlegible/at");
 }
 
 @font-face {
@@ -17,7 +25,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.15;
     margin: 0;
     padding: 0;
@@ -26,15 +34,24 @@ body {
 nav li {
     display: inline-block;
     margin-left: 50px;
+    line-height: 2em;
 }
 
 nav a {
-    color: #FFCB05;
-    font-weight: bold;
+    color: white;
 }
 
 nav a:hover, nav a:focus {
     text-decoration: underline;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #FFCB05;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 nav {
@@ -69,32 +86,51 @@ h1 {
     font-size: 2em;
     text-align: center;
     font-family: "IBMPlexSans-Bold", Arial, Helvetica, sans-serif;
-    margin: .67em;
+    margin: .67em 0;
 }
 
 h2 {
     font-size: 1.5em;
-    font-family: "AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;
     color: #00274C;
-    margin: .75em;
+    margin: .75em 0;
+    text-decoration: underline;
 }
 
 h3 {
     font-size: 1.17em;
-    font-family:"AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;
     color: #9A3324;
-    margin: .83em;
+    margin: .83em 0 .4em 0;
 }
 
 h4{
     font-size: 1em;
-    padding: 5px 0;
-    font-family: "AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;
+    margin: 0.5em 0 .5em 0;
+}
+
+h2, h3, h4, p, ul, li {
+    font-family: "AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;;
+}
+
+p{
+    line-height: 1.15em;
+}
+
+p a {
+    color: #2F65A7;
+    text-decoration: underline;
 }
 
 .container{
     margin: 0 auto;
     width: 95%;
+    display: grid;
+    grid-template-columns: .2fr 5fr .2fr;
+    grid-gap: 5px;
+}
+
+.text-block{
+    grid-column: 2 / span 1;
+    padding: 0 0 5% 0;
 }
 
 img {
@@ -106,13 +142,78 @@ img {
 
 }
 
-footer{
+.logo {
+    background-color: #00274C;
+}
+
+.logoImage {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+footer {
     background-color: #00274C;
     color: white;
     padding: 50px 0;
     text-align: center; 
+    line-height: 2;
+    padding: 5% 15%;
 }
 
-ul{
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+ul {
     list-style-type: square;
+    list-style-position: inside;
+    margin: 20px;
+    padding: 0;
+}
+
+ul li {
+    font-family: "AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;
+}
+
+figcaption{
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: "AtkinsonHyperlegible-Italic", Arial, Helvetica, sans-serif;
+}
+
+.card {
+    margin: 0 auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    margin: 2% 0;
+}
+
+.food, .personal, .kitchen, .support {
+    background-color: #CFC096;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.food, .personal {
+    grid-column: 1 / span 1;
+}
+
+.kitchen, .support {
+    grid-column: 2 / span 1;
+}
+
+.food, .kitchen {
+    grid-row: 1;
+}
+
+.personal, .support {
+    grid-row: 2;
 }
