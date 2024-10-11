@@ -1,0 +1,118 @@
+
+  
+@font-face {
+    font-family: "AtkinsonHyperlegible-Regular";
+    src: url("/font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf");
+}
+
+@font-face {
+    font-family: "IBMPlexSans-Regular";
+    src: url("/font/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "IBMPlexSans-Bold";
+    src: url("/font/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+  }
+
+body {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav a {
+    color: #FFCB05;
+    font-weight: bold;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #00274C;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a{
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus{
+    top: 20px;
+}
+
+*:focus{
+    border: 2.5px solid;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    font-family: "IBMPlexSans-Bold", Arial, Helvetica, sans-serif;
+    margin: .67em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: "AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;
+    color: #00274C;
+    margin: .75em;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-family:"AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;
+    color: #9A3324;
+    margin: .83em;
+}
+
+h4{
+    font-size: 1em;
+    padding: 5px 0;
+    font-family: "AtkinsonHyperlegible-Regular", Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 95%;
+}
+
+img {
+    display: block;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+footer{
+    background-color: #00274C;
+    color: white;
+    padding: 50px 0;
+    text-align: center; 
+}
+
+ul{
+    list-style-type: square;
+}
