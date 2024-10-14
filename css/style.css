@@ -1,26 +1,26 @@
 @font-face {
     font-family: "AtkinsonHyperlegible-Regular";
-    src: url("/font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf");
+    src: url("../font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Regular.ttf");
 }
 
 @font-face {
     font-family: "AtkinsonHyperlegible-Italic";
-    src: url("/font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf");
+    src: url("../font/Atkinson_Hyperlegible/AtkinsonHyperlegible-Italic.ttf");
 }
 
 @font-face {
     font-family: "AtkinsonHyperlegible-Bold";
-    src: url("/font/Atkinson_Hyperlegible/at");
+    src: url("../font/Atkinson_Hyperlegible/at");
 }
 
 @font-face {
     font-family: "IBMPlexSans-Regular";
-    src: url("/font/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+    src: url("../font/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
 }
 
 @font-face {
     font-family: "IBMPlexSans-Bold";
-    src: url("/font/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
+    src: url("../font/IBM_Plex_Sans/IBMPlexSans-Bold.ttf");
   }
 
 body {
